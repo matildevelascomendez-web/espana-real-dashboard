@@ -5,93 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>España Real - Los datos que duelen</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background: #0a0a0a;
-      color: #ffffff;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.5;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #8B4513, #C8102E);
-      border-radius: 15px;
-      margin-bottom: 30px;
-    }
-    .logo {
-      width: 90px;
-      height: 90px;
-      margin-bottom: 15px;
-    }
-    h1 {
-      margin: 10px 0 5px;
-      font-size: 2.8em;
-    }
-    .subtitle {
-      font-size: 1.4em;
-      opacity: 0.95;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-bottom: 40px;
-    }
-    .card {
-      background: #1c1c1c;
-      padding: 25px;
-      border-radius: 15px;
-      border: 2px solid #C8102E;
-      text-align: center;
-    }
-    .icon {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    .number {
-      font-size: 2.6em;
-      font-weight: bold;
-      color: #FFCC00;
-      margin: 10px 0;
-    }
-    .change {
-      font-size: 1.1em;
-    }
+    body { font-family: Arial, sans-serif; background: #0a0a0a; color: #ffffff; margin: 0; padding: 20px; line-height: 1.6; }
+    header { text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #8B4513, #C8102E); border-radius: 15px; margin-bottom: 30px; }
+    .logo { width: 90px; height: 90px; margin-bottom: 15px; }
+    h1 { margin: 10px 0 5px; font-size: 2.8em; }
+    .subtitle { font-size: 1.4em; opacity: 0.95; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px; }
+    .card { background: #1c1c1c; padding: 25px; border-radius: 15px; border: 2px solid #C8102E; text-align: center; }
+    .icon { font-size: 3em; margin-bottom: 10px; }
+    .number { font-size: 2.6em; font-weight: bold; color: #FFCC00; margin: 10px 0; }
     .red { color: #FF4444; }
-    .table-container {
-      overflow-x: auto;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #1c1c1c;
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    th {
-      background: #C8102E;
-      color: white;
-      padding: 18px 12px;
-      text-align: left;
-    }
-    td {
-      padding: 16px 12px;
-      border-bottom: 1px solid #333;
-    }
-    footer {
-      text-align: center;
-      margin-top: 50px;
-      opacity: 0.8;
-      font-size: 0.95em;
-    }
+    table { width: 100%; border-collapse: collapse; background: #1c1c1c; border-radius: 12px; overflow: hidden; margin-top: 20px; }
+    th { background: #C8102E; color: white; padding: 18px 12px; text-align: left; }
+    td { padding: 16px 12px; border-bottom: 1px solid #333; }
+    .boicot { background: #3a0000; border: 2px solid #FF4444; }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://seacabolafiesta.com/images/ardilla.png" alt="Logo SALF Ardilla" class="logo">
+    <img src="https://seacabolafiesta.com/images/ardilla.png" alt="Logo SALF" class="logo">
     <h1>ESPAÑA REAL</h1>
     <p class="subtitle">Los datos claros que los de arriba no quieren que sepas</p>
   </header>
@@ -102,78 +35,87 @@
       <div class="icon">🌍</div>
       <h2>Inmigración Irregular</h2>
       <p class="number">+148.000</p>
-      <p class="change red">↑ Subió un 34% en un año</p>
+      <p class="red">↑ Subió un 34% en un año</p>
       <p><strong>Lo que queremos:</strong> Reducir a la mitad</p>
     </div>
 
     <div class="card">
       <div class="icon">💰</div>
-      <h2>Deuda por cada Español</h2>
+      <h2>Deuda por Español</h2>
       <p class="number">31.450 €</p>
-      <p class="change red">↑ Más deuda que nunca</p>
+      <p class="red">↑ Cada vez más deuda</p>
       <p><strong>Lo que queremos:</strong> Bajar mucho</p>
     </div>
 
     <div class="card">
       <div class="icon">🚔</div>
-      <h2>Delincuentes Extranjeros en prisión</h2>
+      <h2>Delincuentes Extranjeros</h2>
       <p class="number">33 de cada 100</p>
-      <p class="change red">↑ Está subiendo</p>
+      <p class="red">↑ Está subiendo</p>
       <p><strong>Lo que queremos:</strong> Reducir drásticamente</p>
     </div>
 
     <div class="card">
       <div class="icon">👶</div>
-      <h2>Nacimientos de Españoles</h2>
+      <h2>Nacimientos Españoles</h2>
       <p class="number">-18%</p>
-      <p class="change red">↓ Cada vez nacen menos</p>
+      <p class="red">↓ Cada vez nacen menos</p>
       <p><strong>Lo que queremos:</strong> Ayudar a las familias</p>
     </div>
 
   </div>
 
-  <h2 style="text-align:center; margin:30px 0 20px;">📊 ¿Cómo está España realmente?</h2>
+  <!-- NUEVA SECCIÓN BOICOT MEDIÁTICO -->
+  <h2 style="text-align:center; margin:40px 0 20px; color:#FFCC00;">📺 LO QUE NO TE CUENTAN EN LA TELE</h2>
   
-  <div class="table-container">
-    <table>
-      <tr>
-        <th>Problema</th>
-        <th>Situación actual</th>
-        <th>Cómo va</th>
-        <th>Nuestra promesa</th>
-      </tr>
-      <tr>
-        <td>Inmigración ilegal</td>
-        <td>148.000 personas</td>
-        <td class="red">↑ Subiendo mucho</td>
-        <td>Reducir a la mitad en 1 año</td>
-      </tr>
-      <tr>
-        <td>Deuda pública</td>
-        <td>31.450 € por persona</td>
-        <td class="red">↑ Subiendo</td>
-        <td>Bajar fuertemente</td>
-      </tr>
-      <tr>
-        <td>Espera en Sanidad</td>
-        <td>187 días de media</td>
-        <td class="red">↑ Cada vez peor</td>
-        <td>Bajar a la mitad</td>
-      </tr>
-      <tr>
-        <td>Precio de la vivienda</td>
-        <td>Muy caro para jóvenes</td>
-        <td class="red">↑ Subiendo</td>
-        <td>Facilitar que puedas comprarla</td>
-      </tr>
-      <tr>
-        <td>Chiringuitos políticos</td>
-        <td>Miles de millones</td>
-        <td class="red">↑ Gastan más</td>
-        <td>Recortar 40%</td>
-      </tr>
-    </table>
+  <div class="card boicot">
+    <h2>Boicot Mediático en Marcha</h2>
+    <p><strong>12 de mayo 2026</strong> - Programa de El Mundo en TV</p>
+    <p>Encuestas de la campaña andaluza muestran PP, PSOE, Vox, PorA y AA...</p>
+    <p class="red"><strong>PERO NO MENCIONAN A SALF</strong></p>
+    <p>¿Casualidad? No. Cuando un partido nuevo molesta de verdad, la estrategia es clara:</p>
+    <ul>
+      <li>· Silencio total en medios grandes</li>
+      <li>· No invitar a debates</li>
+      <li>· Ocultar encuestas donde crecemos</li>
+    </ul>
+    <p><strong>Esto no nos para.</strong> Al contrario: demuestra que nos tienen miedo.</p>
   </div>
+
+  <h2 style="text-align:center; margin:30px 0 20px;">📊 La realidad de España</h2>
+  
+  <table>
+    <tr>
+      <th>Problema</th>
+      <th>Situación actual</th>
+      <th>Cómo va</th>
+      <th>Nuestra promesa</th>
+    </tr>
+    <tr>
+      <td>Inmigración ilegal</td>
+      <td>148.000 personas</td>
+      <td class="red">↑ Subiendo mucho</td>
+      <td>Reducir a la mitad en 1 año</td>
+    </tr>
+    <tr>
+      <td>Deuda por persona</td>
+      <td>31.450 €</td>
+      <td class="red">↑ Subiendo</td>
+      <td>Bajar fuertemente</td>
+    </tr>
+    <tr>
+      <td>Espera en Sanidad</td>
+      <td>187 días</td>
+      <td class="red">↑ Peor</td>
+      <td>Bajar a la mitad</td>
+    </tr>
+    <tr>
+      <td>Precio vivienda</td>
+      <td>Muy alto para jóvenes</td>
+      <td class="red">↑ Subiendo</td>
+      <td>Facilitar que puedas tener casa</td>
+    </tr>
+  </table>
 
   <footer>
     <p>España Real • Datos fáciles de entender • Actualizado mayo 2026</p>
