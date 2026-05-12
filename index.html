@@ -7,7 +7,7 @@
   <style>
     body { font-family: Arial, sans-serif; background: #0a0a0a; color: #ffffff; margin: 0; padding: 20px; line-height: 1.6; }
     header { text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #8B4513, #C8102E); border-radius: 15px; margin-bottom: 30px; }
-    .logo { width: 120px; height: 120px; margin-bottom: 15px; }
+    .logo { width: 120px; height: 120px; margin-bottom: 15px; border-radius: 50%; }
     h1 { margin: 10px 0 5px; font-size: 3.2em; }
     .subtitle { font-size: 1.5em; opacity: 0.95; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px; }
@@ -16,26 +16,92 @@
     .number { font-size: 2.8em; font-weight: bold; color: #FFCC00; margin: 10px 0; }
     .red { color: #FF4444; }
     .source { font-size: 0.75em; opacity: 0.7; margin-top: 12px; }
-    .boicot { background: #3a0000; border: 3px solid #FF4444; }
+    .boicot { background: #3a0000; border: 3px solid #FF4444; padding: 20px; border-radius: 15px; }
   </style>
 </head>
 <body>
 
   <header>
     <img src="https://www.seacabolafiesta.com/wp-content/uploads/2024/06/ardilla-salf.png" 
-         alt="Logo SALF" class="logo" 
-         onerror="this.src='https://i.imgur.com/0z5v5vL.png';">
+         alt="Logo SALF" class="logo">
     <h1>ESPAÑA REAL</h1>
     <p class="subtitle">Los datos claros y duros que los de arriba no quieren que sepas • Mayo 2026</p>
   </header>
 
-  <!-- Resto del código igual que antes (las 6 tarjetas) -->
-
   <div class="grid">
-    <!-- ... (mantén las tarjetas que ya tienes) ... -->
+
+    <div class="card">
+      <div class="icon">🌍</div>
+      <h2>Inmigración Irregular</h2>
+      <p class="number">+148.000</p>
+      <p class="red">↑ +34% en un año</p>
+      <p><strong>Lo que queremos:</strong> Reducir a la mitad</p>
+      <p class="source">Fuente: Ministerio del Interior</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🚔</div>
+      <h2>Delincuencia Extranjera</h2>
+      <p class="number">~32%</p>
+      <p class="red">de los presos</p>
+      <p><strong>Lo que queremos:</strong> Deportaciones reales</p>
+      <p class="source">Fuente: Ministerio del Interior</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏥</div>
+      <h2>Listas de Espera Sanidad</h2>
+      <p class="number">121-187 días</p>
+      <p class="red">Media nacional</p>
+      <p><strong>Lo que queremos:</strong> Bajar drásticamente</p>
+      <p class="source">Fuente: Ministerio de Sanidad</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🏠</div>
+      <h2>Precio Vivienda</h2>
+      <p class="number">Muy alto</p>
+      <p class="red">Especialmente para jóvenes</p>
+      <p><strong>Lo que queremos:</strong> Facilitar vivienda a españoles</p>
+      <p class="source">Fuente: Idealista / Tinsa</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💰</div>
+      <h2>Deuda Pública</h2>
+      <p class="number">~101% PIB</p>
+      <p class="red">Enorme carga</p>
+      <p><strong>Lo que queremos:</strong> Recortar chiringuitos</p>
+      <p class="source">Fuente: Banco de España</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👶</div>
+      <h2>Nacimientos Españoles</h2>
+      <p class="number">-18%</p>
+      <p class="red">↓ En 10 años</p>
+      <p><strong>Lo que queremos:</strong> Ayudas fuertes a familias</p>
+      <p class="source">Fuente: INE</p>
+    </div>
+
   </div>
 
-  <!-- Boicot y botones -->
+  <div class="boicot">
+    <h2>📺 LO QUE NO TE CUENTAN EN LA TELE</h2>
+    <p><strong>12 de mayo 2026</strong> — El Mundo TV</p>
+    <p>Hablan de PP, PSOE, Vox... pero <strong class="red">NO MENCIONAN A SALF</strong></p>
+    <p>Cuando nos esconden es porque les estamos molestando de verdad.</p>
+  </div>
+
+  <div style="text-align:center; margin:40px 0;">
+    <a href="https://www.seacabolafiesta.com/" target="_blank" style="background:#C8102E; color:white; padding:15px 30px; text-decoration:none; border-radius:10px; font-size:1.3em;">
+      🌐 Web Oficial SALF
+    </a>
+  </div>
+
+  <footer style="text-align:center; margin-top:50px; opacity:0.8;">
+    <p>Impulsado por ciudadanos hartos • Transparencia total</p>
+  </footer>
 
 </body>
 </html>
